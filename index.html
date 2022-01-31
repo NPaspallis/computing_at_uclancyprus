@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-319978-26"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-319978-26');
+</script>
+<title>BSc(Hons) Computing @ UCLan Cyprus</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="University, UCLan Cyprus, Cyprus, Computing, Programming, Software Engineering, Computer Game Development, Computer Networks Technology, Mobile Apps, Unity, CISCO, BCS, CITP, Game Development, Game Design, Game Engine, Computer Graphics, 3D graphics, DirectX, OpenGL, Graphics Processing Unit, 3D modelling, 3D model, 3D Mesh, ​Maya, Blender, Debugging, Game Loop, GPU, Graphics Card, NVIDIA, Direct3D, Computer Networks​, ​Wireless and Mobile Networks​, ​Computer Security​, ​Penetration Testing​, ​Network Routing​, ​Cisco Networks​, ​Network Design​, ​Operating Systems​, ​Simulation, Emulation, ​Network Management, Organisational IT Support, User Management, Network Monitoring, Stress Testing, Computer Hardware, ​Computer Forensics">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="icon" href="images/favicon.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="images/favicon.png" />
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-35, .bgimg-4, .bgimg-5, .bgimg-6 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('images/parallax1.jpg');
+    min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("images/parallax2.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("images/parallax3.jpg");
+    min-height: 400px;
+}
+
+/* Third .5 image (Programmes) */
+.bgimg-35 {
+    background-image: url("images/p35.jpg");
+    min-height: 400px;
+}
+
+/* Fourth image (Staff) */
+.bgimg-4 {
+    background-image: url("images/parallax4.jpg");
+    min-height: 400px;
+}
+
+/* Fifth image (Success stories) */
+.bgimg-5 {
+    background-image: url("images/parallax5.jpg");
+    min-height: 400px;
+}
+
+/* Sixth image (Testimonials) */
+.bgimg-6 {
+    background-image: url("images/parallax6.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-35, .bgimg-4, .bgimg-5, .bgimg-6 {
+        background-attachment: scroll;
+    }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body onload="getSource()">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#why-computing" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-laptop"></i> WHY COMPUTING</a>
+    <a href="#why-uclan-cyprus" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-university"></i> WHY UCLAN CYPRUS</a>
+    <a href="#programmes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-graduation-cap"></i> PROGRAMMES</a>
+    <a href="#staff" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ACADEMIC STAFF</a>
+    <a href="#success-stories" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-trophy"></i> SUCCESS STORIES</a>
+    <a href="#testimonials" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-quote-left"></i> TESTIMONIALS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#why-computing" class="w3-bar-item w3-button" onclick="toggleFunction()">WHY COMPUTING</a>
+    <a href="#why-uclan-cyprus" class="w3-bar-item w3-button" onclick="toggleFunction()">WHY UCLAN CYPRUS</a>
+    <a href="#staff" class="w3-bar-item w3-button" onclick="toggleFunction()">ACADEMIC STAFF</a>
+    <a href="#success-stories" class="w3-bar-item w3-button" onclick="toggleFunction()">SUCCESS STORIES</a>
+    <a href="#graduates" class="w3-bar-item w3-button" onclick="toggleFunction()">GRADUATES</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><img src="images/uclan-cy.png" height="128px" alt="UCLAN CYPRUS"/> COMPUTING </span><br><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> @ UCLAN CYPRUS</span>
+  </div>
+</div>
+
+<!-- Container (Why Computing Section) -->
+<div class="w3-content w3-container w3-padding-64" id="why-computing">
+  <h3 class="w3-center">WHY COMPUTING</h3>
+  <p class="w3-left">
+	<div>
+		<p>
+			Computing and especially <i>software is eating the world</i>: the largest bookseller (Amazon), the largest video service (Netflix) the largest marketing & business intelligence company (Google) are all software companies<sup>1</sup>.
+		</p>
+		<p>
+			Computing includes the top 3 skills required to succeed in the future working environment: <i>Complex Problem Solving</i>, <i>Critical Thinking</i> and <i>Creativity</i>.
+			It is also thought to be the top industrial sector for 2020, as claimed by the highly acclaimed World Economic Forum.<sup>2</sup>
+		</p>
+		<p>
+			The demand for computing professionals is high, greatly exceeding the supply. This has triggered initiatives such as the <a href="http://codeweek.eu" target="_blank">CodeWeek</a> in Europe and the <a href="https://hourofcode.com" target="_blank">Hour of Code</a> in the United States with the aim of encouraging more young students to take an interest in coding.
+			Our staff have also launched the highly successful <a href="http://codecyprus.org" target="_blank">Code Cyprus</a> initiative to promote the value of coding & computing in Cyprus.
+		</p>
+		<br/><br/>
+	</div>
+  </p>
+  <p class="w3-wide"><i class="far fa-smile"></i> &nbsp; JOB SATISFACTION</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:72%">Out of the top 25 jobs voted to be 'hot skills' on LinkedIn, 18 were IT related<sup>3</sup></div>
+  </div>
+  <p class="w3-wide"><i class="fas fa-suitcase"></i> &nbsp; EMPLOYMENT</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:93%">Very high graduate prospects, with demand exceeding the supply<sup>4</sup></div>
+  </div>
+  <p class="w3-wide"><i class="far fa-money-bill-alt"></i> &nbsp; SALARY</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">Computing specialists enjoy high salaries<sup>5</sup></div>
+  </div>
+
+  <br/>
+
+  <ol>
+	<li>Marc Andreessen, <a href="https://a16z.com/2016/08/20/why-software-is-eating-the-world/" target="_blank">Why Software Is Eating the World</a> published in The Wall Street Journal on August 20, 2011.</li>
+	<li>Jeff Desjardins, <a href="https://www.weforum.org/agenda/2018/07/the-skills-needed-to-survive-the-robot-invasion-of-the-workplace" target="_blank">10 skills you'll need to survive the rise of automation</a> published on World Economic Forum's website, July 2, 2018.</li>
+	<li><a href="http://blog.linkedin.com/2014/12/17/the-25-hottest-skills-that-got-people-hired-in-2014" target="_blank">LinkedIn: The 25 Hottest Skills That Got People Hired in 2014</a></li>
+	<li><a href="http://cacm.acm.org/news/185792-europe-faces-800000-shortfall-in-skilled-ict-workers-by-2020/fulltext" target="_blank">ACM: Europe Faces 800,000 Shortfall in Skilled ICT Workers by 2020</a></li>
+	<li><a href="http://www.thecompleteuniversityguide.co.uk/careers/what-do-graduates-do-and-earn/what-do-graduates-earn/" target="_blank">The Complete University Guide: What Do Graduates Earn?</a></li>
+  </ol>
+
+  	<br/>
+  	<br/>
+  	<br/>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">WHY UCLAN CYPRUS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="why-uclan-cyprus">
+  <h3 class="w3-center">WHY UCLAN CYPRUS</h3>
+  <p class="w3-center"><em>The Computing programme at UCLan Cyprus offers some unique advantages:</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding">
+    <div class="w3-left">
+		<ul>
+			<li><b>UK tailored curriculum.</b> This means the content of the programme is based on the significant experience of UCLan UK and at the same time it is tailored to industry partners (from the UK, Europe, US, and of course Cyprus).</li>
+			<li><b>Accredited.</b> Our programme is accredited by BCS, the Chartered Institute for IT, as meeting the academic requirement for registration as a Chartered IT Professional, and by BCS, on behalf of the Engineering Council, as meeting the academic requirement for Incorporated Engineer and partially meeting the academic requirement for Chartered Engineer.
+			<li><b>Industry-oriented specializations.</b> Keeping up with developments in the industry, our course includes a number of purposely-designed modules enabling our students to <a href="#programmes">specialize</a> in <b>Software Engineering</b>, <b>Games Development</b> and <b>Network Technology</b>. </li>
+			<li><b>Academic Staff.</b> The <a href="#staff">academic staff</a> of the course is research active in a wide range of computing-related topics. Furthermore they are trained to be effective educators, with all of them having reached or working towards the title of <b>Fellow of the HEA</b><sup>7</sup>. </li>
+			<li><b>Strong Quality Assurance.</b> The BSc(Hons) Computing is accredited both by the UK's QAA<sup>8</sup> and Cyprus' ECPU<sup>9</sup>, allowing us to offer a degree from both UCLan UK as well as UCLan Cyprus (that's why our graduates get a <b>dual degree</b>). </li>
+			<li><b>International outlook.</b> Our students enjoy many educational and employment opportunities abroad, such as funded summer internships in Europe through IAESTE and Erasmus<sup>10</sup>, and industrial year placements<sup>11</sup>. Furthermore, our students can opt to spend their Year 2 or Year 3 at <a href="http://www.uclan.ac.uk" target="_blank">UCLan</a> at Preston, UK. Read how our <a href="#testimonials">students experienced</a> these opportunities.
+			<li><b>Real world skills.</b> Our programme has modules aligned with professional certificates<sup>12</sup> from CISCO and the Linux Professional Institute, allowing our students to strengthen their CV even before graduation.
+
+		</ul>
+		
+	  <ol start="6">
+		<li><a href="http://www.bcs.org/accredited" target="_blank">British Computer Society - List of accredited institutions/courses</a></li>
+		<li><a href="https://www.heacademy.ac.uk/individuals/fellowship/fellow" target="_blank">Fellow HEA - The Quality Assurance Agency for Higher Education</a></li>
+		<li><a href="http://www.qaa.ac.uk" target="_blank">QAA - The Quality Assurance Agency for Higher Education</a></li>
+		<li><a href="http://www.dipae.ac.cy/archeia/idrymata/idiotika_panepistimia/uclan_programs_approved_ecpu_eng.pdf" target="_blank">The Cyprus Agency of Quality Assurance and Accreditation in Higher Education (DI.P.A.E.) - UCLan Cyprus accreditation</a></li>
+		<li>UCLan Cyprus students have been highly successful in securing competitive summer internships with the <a href="http://iaeste.org" target="_blank">International Association for the Exchange of Students for Technical Experience, Association</a> (IAESTE) and the <a href="http://www.erasmusprogramme.com/" target="_blank">ERASMUS</a> student exchange programme.</li>
+		<li>The BSc(Hons) Computing programme offers an optional <i>sandwich mode</i> where the students can work at an industrial placement for one year, before their final year of studies.</li>
+		<li>Our modules are aligned with the following <a href="https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna-routing-switching.html" target="_blank">CISCO certificates</a>: CCNA Introduction to Networks (Intermediate), CCNA Switching, Routing and Wireless Essentials (Intermediate), and CCNA Enterprise Networking, Security and Automation (Advanced), and also with the <a href="https://www.lpi.org/our-certifications/linux-essentials-overview" target="_blank">LPI Essentials certificate</a> by the Linux Professional Institute.</li>
+	  </ol>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Specializations</span><br>
+    Software Engineering &middot; Games Development &middot; Network Technology
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Accreditation</span><br>
+    British Computer Society &middot; Cyprus Scientific and Technical Chamber (ETEK)
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Staff</span><br>
+    Highly Research Active &middot; Certified teaching skills &middot; Student Centered
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Culture</span><br>
+    Tailored to the high standards of UK higher education &middot; Industry Oriented &middot; Strong support for Placements &amp; Internships <!-- &middot; Research Projects -->
+  </div>
+</div>
+
+<!--  Parallax Image with PROGRAMMES Text -->
+<div class="bgimg-35 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">PROGRAMMES</span>
+  </div>
+</div>
+
+<!-- Container (Staff Section) -->
+<div class="w3-content w3-container w3-padding-64" id="programmes">
+  <h3 class="w3-center">COMPUTING PROGRAMMES</h3>
+
+    <div class="w3-row-padding w3-center" style="background-color: #eee;">
+
+		<div class="w3-col m12">
+		  <p><h2>BSc(Hons) Computing</h2></p>
+		  <span class="tooltiptext">
+			<i class="fa fa-graduation-cap fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		  <p style="text-align: left;">
+			A range of careers opens to students upon completion of their degree. These include roles in business requirements analysis, design and development of database-backed systems, development of web and mobile applications, computer games development, system testing and management, wired and wireless networks management, network security, and many more. Moreover, the broad skills that our students acquire enable them to remain competitive in the fast evolving area of computing technology.
+		  </p>
+		  </span>
+		  <p style="text-align: left;">
+		  The <b>BSc(Hons) Computing</b> enables you to become a:
+		</div>
+	</div>
+
+    <div class="w3-row-padding w3-center" style="background-color: #eee;">
+		<div class="w3-col m4">
+		  <ul style="text-align: left;">
+		  <li><b>Software Engineer</b>
+		  <br/>
+		  <i class="fas fa-keyboard fa-3x fa-pull-left fa-border"></i>Develop software development skills in a practical hands-on way on this engaging specialization. You will cover a range of technologies - from mobile phones to enterprise applications - across the whole software development lifecycle, from understanding requirements through to design and implementation and testing.
+		  </li>
+		  </ul>
+		</div>
+
+		<div class="w3-col m4">
+		  <ul style="text-align: left;">
+		  <li><b>Computer Games Developer</b>
+		  <br/>
+		  <i class="fas fa-gamepad fa-3x fa-pull-left fa-border"></i>Channel your love of computer games into your dream career. This specialization will prepare you to work as part of a multi-skilled team, producing high quality, innovative and exciting games to tight deadlines. You learn by doing, using the high performance kit in our Games Laboratory.
+		  </li>
+		  </ul>
+		</div>
+
+		<div class="w3-col m4">
+		  <ul style="text-align: left;">
+		  <li><b>Computer Network Technologist</b>
+		  <br/>
+		  <i class="fab fa-connectdevelop fa-3x fa-pull-left fa-border"></i>This practice-based specialization will prepare you for a career in an exciting industry that, thanks to new ideas, applications, security threats and constantly evolving technology, is a fascinating area to work in. It includes the latest developments in wired and wireless networking and security, underpinned by relevant theory to offer a broad view of the networking industry.
+		  </li>
+		  </ul>
+		</div>
+
+		<div class="w3-col m12">
+  		  <p style="text-align: left;">
+			<img src="images/bcs_ad.png" align="right" width="150" title="BCS Associated Degree"/>Our programme is <b>accredited by the British Computer Society</b> (<a href="http://bcs.org" target="_blank">BCS</a>) and our graduates receive the title of <b>Chartered IT Professional</b> (<a href="http://www.bcs.org/citp" target="_blank">CITP</a>).
+		  </p>
+		  <p style="text-align: left;">
+		  <i class="fa fa-file-pdf"></i> &nbsp; Get the <a href="factsheets/BScComputing_Factsheet2018.pdf" target="_blank"><i>BSc(Hons) Computing</i> &nbsp; factsheet</a>
+		  </p>
+		  <p style="text-align: left;">
+		  Check this <a href="https://www.uclancyprus.ac.cy/undergraduate-course/bsc-hons-computing" target="_blank">website</a> <i class="fas fa-external-link-alt"></i> for further details
+		  </p>
+		</div>
+	</div>
+
+    <div class="w3-row-padding w3-center">
+
+		<br/>
+
+		<div class="w3-col m4">
+		  <p><h2>MSc Computing</h2></p>
+		  <span class="tooltiptext">
+			<i class="fa fa-graduation-cap fa-2x fa-pull-left fa-border" aria-hidden="true"></i>
+		  <p style="text-align: left;">
+			This course enhances students' employment prospects in the IT field, and further develops the skills they obtained in their undergraduate degree. The skills acquired can lead to a range of careers in computing specialisations that are in high demand even outside the technology sector, such as networks and IT security.
+			</p>
+		  </span>
+		  <p style="text-align: left;">
+		  Specializations in:
+		  <ul style="text-align: left;">
+		  <li><b>IT Security & Networking</b></li>
+		  <li><b>Mobile & Web Development</b></li>
+		  <li><b>IT Management in Business</b></li>
+		  </ul>
+		  </p>
+		  <p style="text-align: left;">
+		  <i class="fa fa-file-pdf"></i> &nbsp; Get the <a href="factsheets/MScComputing_Factsheet2018.pdf" target="_blank"><i>MSc Computing</i> &nbsp; factsheet</a>
+		  </p>
+		  <p style="text-align: left;">
+		  Check the <a href="https://www.uclancyprus.ac.cy/postgraduate-course/msc-computing" target="_blank">website</a> <i class="fas fa-external-link-alt"></i> for more details
+		  </p>
+		</div>
+
+		<div class="w3-col m4">
+		  <p><h2>MSc Cybersecurity</h2></p>
+		  <span class="tooltiptext">
+			<i class="fa fa-graduation-cap fa-2x fa-pull-left fa-border" aria-hidden="true"></i>
+		  <p style="text-align: left;">
+			Typically, Cybersecurity professionals can be employed by telecommunication, IT and technology companies, network operators and network equipment vendors, consultancy agencies and government departments, as well as any other organisation that needs to protect its IT infrastructure and operations. Cybersecurity is part of nearly every discipline from defence and intelligence to healthcare and aerospace.
+			</p>
+		  </span>
+		  <p style="text-align: left;">
+		  Also available as <b>Distance Learning</b>.
+		  <br/>
+		  <br/>
+		  <i class="fa fa-file-pdf"></i> &nbsp; Get the <a href="factsheets/MScCybersecurity_Factsheet2018.pdf" target="_blank"><i>MSc Cybersecurity</i> &nbsp; factsheet</a>
+		  </p>
+		  <p style="text-align: left;">
+		  Check the <a href="https://www.uclancyprus.ac.cy/postgraduate-course/msc-cybersecurity" target="_blank">website</a> <i class="fas fa-external-link-alt"></i> for more details
+		  </p>
+		</div>
+
+		<div class="w3-col m4">
+		  <p><h2>MSc Data Analytics</h2></p>
+		  <span class="tooltiptext">
+			<i class="fa fa-graduation-cap fa-2x fa-pull-left fa-border" aria-hidden="true"></i>
+		  <p style="text-align: left;">
+			This course is designed to provide graduates and working professionals with skills that enable them to organise, analyse, explore, interpret and visualise their data, as well as acquire practical experience with modern tools. These skills can be used in virtually every industry domain that uses data, such as Banking, Consumer, Healthcare, Energy, Manufacturing, Technology, etc. Additionally, the course provides a multitude of career options in both national and international data analytics companies.
+			</p>
+		  </span>
+		  <p style="text-align: left;">
+		  <i class="fa fa-file-pdf"></i> &nbsp; Get the <a href="factsheets/MScDataAnalytics_Factsheet2018.pdf" target="_blank"><i>MSc Data Analytics</i> &nbsp; factsheet</a>
+		  </p>
+		  <p style="text-align: left;">
+		  Check the <a href="https://www.uclancyprus.ac.cy/postgraduate-course/msc-data-analytics" target="_blank">website</a> <i class="fas fa-external-link-alt"></i> for more details
+		  </p>
+		</div>
+
+	</div>
+</div>
+
+<!-- Third Parallax Image with STAFF Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">ACADEMIC STAFF</span>
+  </div>
+</div>
+
+<!-- Container (Staff Section) -->
+<div class="w3-content w3-container w3-padding-64" id="staff">
+  <h3 class="w3-center">ACADEMIC STAFF</h3>
+
+    <div class="w3-row-padding">
+
+		<p>
+		Our programme is delivered by a blend of tenured faculty and associate lecturers. This allows us to deliver a programme that builds on the best from both academia and industry.
+		The academic faculty involved in the delivery of the <i>BSc(Hons) Computing</i> programme are:
+		</p>
+		<hr/>
+
+		<img src="images/ipolycarpou.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Irene Polycarpou" align="left">
+		<p>
+		<b>Irene Polycarpou</b>, Ph.D., Fellow HEA &mdash; Head of <i>School of Sciences</i>
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:IPolycarpou@uclan.ac.uk" target="_blank">IPolycarpou at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694048" target="_blank">2469 4048</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/prof-irene-polycarpou" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #133
+		</p>
+		<p>
+		Educational technologies, Interactive multimedia for education, Instructional software, Participatory software design, eLearning, Computer Science curriculum, Student cognition and learning styles, K-12 mathematics and STEM education.
+		</p>
+		<hr/>
+
+		<img src="images/lnisiotis.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Louis Nisiotis" align="left">
+		<p>
+			<b>Louis Nisiotis</b>, Ph.D., Fellow HEA &mdash; Course leader of <i>BSc Computing</i>
+			<br/>
+			<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:LNisiotis@uclan.ac.uk" target="_blank">LNisiotis at uclan.ac.uk</a> &middot;
+			<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694144" target="_blank">2469 4144</a> &middot;
+			<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-louis-nisiotis" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #126 &middot;
+			<i class="fa fa-book w3-hover-text-black"></i>&nbsp;<a href="https://orcid.org/0000-0002-8018-1352" target="_blank">orcid</a>
+		</p>
+		<p>
+			VR/AR/MR/XR, Immersive Learning Technologies, Cyber-Physical-Social-Systems.
+		</p>
+		<hr/>
+
+		<img src="images/apiki.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Andri Piki" align="left">
+		<p>
+			<b>Andrie Piki</b>, Ph.D., Assoc. Fellow HEA &mdash; Deputy course leader of <i>BSc Computing</i>
+			<br/>
+			<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:APiki@uclan.ac.uk" target="_blank">APiki at uclan.ac.uk</a> &middot;
+			<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694067" target="_blank">2469 4067</a> &middot;
+			<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-andriani-piki" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #126 &middot;
+			<i class="fa fa-book w3-hover-text-black"></i>&nbsp;<a href="https://orcid.org/0000-0003-0376-1713" target="_blank">orcid</a>
+		</p>
+		<p>
+			Educational Technology, Instructional Design, and Academic Writing.
+		</p>
+		<hr/>
+
+		<img src="images/npaspallis.png" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Nearchos Paspallis" align="left">
+		<p>
+			<b>Nearchos Paspallis</b>, Ph.D., Fellow HEA</i>
+			<br/>
+			<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:NPaspallis@uclan.ac.uk" target="_blank">NPaspallis at uclan.ac.uk</a> &middot;
+			<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694091" target="_blank">2469 4091</a> &middot;
+			<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="http://nearchos.github.io" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #141 &middot;
+			<i class="fa fa-book w3-hover-text-black"></i>&nbsp;<a href="http://orcid.org/0000-0002-2636-7973" target="_blank">orcid</a>
+		</p>
+		<p>
+			Software engineering and distributed systems, Mobile and pervasive computing systems, Gamification as a means for student engagement and behaviour change, Responsible Research and Innovation.
+		</p>
+		<hr/>
+
+		<img src="images/jantoniou.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Josephina Antoniou" align="left">
+		<p>
+		<b>Josephina Antoniou</b>, Ph.D., Fellow HEA &mdash; Course leader of <i>MSc Computing</i>
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:JAntoniou@uclan.ac.uk" target="_blank">JAntoniou at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694094" target="_blank">2469 4094</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-josephina-antoniou/" target="_blank">web</a> &middot;
+		<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #137
+		</p>
+		<p>
+		Decision-Making for Problem Solving using Game Theory, Baeysian Principles and Cooperative Strategies, Cloud Computing, Quantification of user experience, Science in education, Responsible Research and Innovation in ICT.
+		</p>
+		<hr/>
+
+		<img src="images/pgandreou.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Panayiotis Andreou" align="left">
+		<p>
+		<b>Panayiotis Andreou</b>, Ph.D., Assoc. Fellow HEA &mdash; Course leader of <i>MSc Data Analytics</i>
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:PGAndreou@uclan.ac.uk" target="_blank">PGAndreou at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694085" target="_blank">2469 4085</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-panayiotis-andreou" target="_blank">web</a> &middot;
+		<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #141 &middot;
+		<i class="fa fa-book w3-hover-text-black"></i>&nbsp;<a href="https://orcid.org/0000-0002-6369-1094" target="_blank">orcid</a>
+		</p>
+		<p>
+		Data Management for Systems and Networks, Information Systems, Adaptive Computing, ICT services for eHealth and Ambient Assisted Living, Adaptive Systems.
+		</p>
+		<hr/>
+
+<!--
+		<img src="images/mraspopoulos.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Marios Raspopoulos" align="left">
+		<p>
+		<b>Marios Raspopoulos</b>, Ph.D., Assoc. Fellow HEA &mdash; Course leader of <i>BSc(Hons) Electrical and Electronic Engineering</i>
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:MRaspopoulos@uclan.ac.uk" target="_blank">MRaspopoulos at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694070" target="_blank">2469 4070</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-marios-raspopoulos" target="_blank">web</a>
+		</p>
+		<p>
+		Telecommunications, Mobile Communications, Positioning, Design and Management of Wireless Telecommunication Systems and Networks, 
+		Smart Homes/Cities/Hotels/Factories, Ubiquitous and Pervasive Computing/Internet of Things.
+		</p>
+		<hr/>
+-->
+
+		<img src="images/estavrou.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Eliana Stavrou" align="left">
+		<p>
+		<b>Eliana Stavrou</b>, Ph.D., Assoc. Fellow HEA &mdash; Course leader of <i>MSc Cybersecurity</i>
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:EStavrou@uclan.ac.uk" target="_blank">EStavrou at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694077" target="_blank">2469 4077</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-eliana-stavrou" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #138
+		</p>
+		<p>
+		Critical infrastructure protection, Situational awareness, Threat profiling, Cybersecurity toolkits design, Wireless, mobile, ad-hoc and sensor network security, IoT security, Adaptive security, Intrusion recovery techniques.
+		</p>
+		<hr/>
+
+		<img src="images/apamboris.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Andreas Pamboris" align="left">
+		<p>
+		<b>Andreas Pamboris</b>, Ph.D., Assoc. Fellow HEA
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:APamboris@uclan.ac.uk" target="_blank">APamboris at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694046" target="_blank">2469 4046</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-pamboris-andreas" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #126
+		</p>
+		<p>
+		Systems, Distributed Systems, Software Engineering, Mobile & Wearable Computing, Mobile Cloud Computing.
+		</p>
+		<hr/>
+
+		<img src="images/ggrispos.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="George Grispos" align="left">
+		<p>
+			<b>George Grispos</b>, Ph.D.
+			<br/>
+			<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:GGrispos@uclan.ac.uk" target="_blank">GGrispos at uclan.ac.uk</a> &middot;
+			<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694079" target="_blank">2469 4079</a> &middot;
+			<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-george-grispos" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #126
+		</p>
+		<p>
+		Digital forensics and Cyber investigations.
+		</p>
+		<hr/>
+
+		<img src="images/vaharonson.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Vered Aharonson" align="left">
+		<p>
+			<b>Vered Aharonson</b>, Ph.D.
+			<br/>
+			<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:VAharonson@uclan.ac.uk" target="_blank">VAharonson at uclan.ac.uk</a> &middot;
+			<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694000" target="_blank">2469 4000</a> &middot;
+			<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/prof-vered-aharonson" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #126
+		</p>
+		<p>
+		Digital forensics and Cyber investigations.
+		</p>
+		<hr/>
+
+		<img src="images/asavva3.jpg" style="width:120px; padding:16px;" class="w3-hover-opacity" alt="Andreas Savva" align="left">
+		<p>
+		<b>Andreas Savva</b>, Ph.D. Cand.
+		<br/>
+		<i class="fa fa-envelope w3-hover-text-black"></i>&nbsp;<a href="mailto:ASavva3@uclan.ac.uk" target="_blank">ASavva3 at uclan.ac.uk</a> &middot;
+		<i class="fa fa-phone w3-hover-text-black"></i>&nbsp;<a href="tel:+35724694034" target="_blank">2469 4034</a> &middot;
+		<i class="fa fa-globe w3-hover-text-black"></i>&nbsp;<a href="https://www.uclancyprus.ac.cy/academic/dr-andreas-savva" target="_blank">web</a> &middot;
+			<i class="fa fa-building w3-hover-text-black"></i>&nbsp;room #125
+		</p>
+		<p>
+		Many-core Architectures, Networks on Chip and ways of minimizing power consumption in networks and reliability, Uses of Artificial Neural Networks for prediction, Performance improvement of overlay networks with caching algorithms.
+		</p>
+		<hr/>
+
+		Furthermore, a number of associate lecturers is involved in the delivery of specialized modules, bringing their expertise from the areas of telecoms, image/video compression and processing, forensic computing, computer security, software engineering, and artificial intelligence.
+	</div>
+</div>
+
+<!-- Parallax Image with SUCCESS STORIES Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">SUCCESS STORIES</span>
+  </div>
+</div>
+
+<!-- Container (Staff Section) -->
+<div class="w3-content w3-container w3-padding-64" id="success-stories">
+  <h3 class="w3-center">SUCCESS STORIES</h3>
+
+  <div class="w3-row-padding">
+    <div class="w3-left">
+		<ul>
+
+			<li><i>May 12-13th, 2021</i><br/>
+				Two student teams from our BSc Computing programme have received praise at the <a href="https://icir.ieee.org/competition" target="_blank">IEEE ICIR student competition</a>.
+				<br/>
+				Aimilios Hadjiliasis and Floris Alexandrou achieved the 2nd place by developing with <i>An intelligent & Immersive Virtual Museum using Multi-Agent Intelligent NPCs</i>.
+				<br/>
+				Alex Vanellis and Christos Gregoriou have developed a beautiful AI powered virtual museum of the history of computers, got a good score and received very good feedback from the reviewers.
+				<br/>
+				Furthermore, our own staff <a href="#staff">Dr Louis Nisiotis</a> was among the winners of the professional track of the same competition.
+				<br/>
+				You can see videos of these projects at the following link.
+				<br/>
+				[<a href="https://icir.ieee.org/competition/results/" target="_blank">link</a>,
+				<a href="https://icir.ieee.org/competition/results/" target="_blank"><i class="fa fa-video"></i></a>]</li><br/>
+
+			<li><i>December 14-16th, 2020</i><br/>
+				<a href="https://uclancyprus.ac.cy" target="_blank">UCLan Cyprus</a> and <a href="http://inspirecenter.org/" target="_blank">InSPIRE Center</a> organize an exciting workshop
+				which elevates the creative and developmental skills of computer games developers.
+				The workshop is developed and delivered by Svyatoslav Torick, an ex-Wargaming employee.
+				It consists of hands-on sessions which guide the game owner to successfully walk the way from basic idea to enriched concept.
+				The process is based on a 'cut and slice' method, alternating analytics and brainstorm sessions.
+				[<a href="gamecraft/index.html" target="_blank">link</a>,
+				<a href="gamecraft/GameCraft_2020.pdf" target="_blank"><i class="fa fa-file-pdf"></i></a>]</li><br/>
+
+			<li><i>November 20th, 2020</i><br/>
+				The <i>BSc (Hons) Computing</i> programme has partnered with Cyprus-based <a href="https://proto.io" target="_blank">proto.io</a>
+				to bring its world-class prototyping tool to UCLan Cyprus’ students.
+				Prototyping is a core phase in mobile app development and the use of proto.io’s advanced tool offers invaluable experience students aspiring to become mobile developers.
+				[<a href="https://proto.io/promo/uclanCY/" target="_blank">link</a>]</li><br/>
+
+			<li><i>October 5th, 2020</i><br/>
+				The Cyprus High Commission in the UK celebrates the 60th anniversary of the establishment of the Republic of Cyprus with a series of online cultural events.
+				Lecturer of Computing, Dr <b>Louis Nisiotis</b> participates in one of the live panel discussions entitled <i>TOGETHER/APART: GOING NEW PLACES</i>, discussing technology and the arts in the time of Covid-19.
+				[<a href="https://www.culturalchc.co.uk/cyprusat60-details" target="_blank">link</a>]</li><br/>
+
+			<li><i>August 21st, 2020</i><br/>
+				<i>Assistant Professor</i> <b>Panayiotis Andreou</b> is featured in a <i>Research Outreach</i>
+				<a href="https://researchoutreach.org/articles/collaborate-innovate-inspire-center-uclan-cyprus-brings-together-academics-industry/" target="_blank">article</a>
+				discussing <i>How the InSPIRE Center at UCLan Cyprus brings together academics and industry</i>.
+				[<a href="https://researchoutreach.org/articles/collaborate-innovate-inspire-center-uclan-cyprus-brings-together-academics-industry/" target="_blank">link</a>,
+				 <a href="pdf/TL-Panayiotis-Andreou-InSPIRE.pdf" target="_blank"><i class="fa fa-file-pdf"></i></a>]</li><br/>
+
+			<li><i>July 30th, 2020</i><br/>
+				<i>BSc Computing</i> graduates <b>Christos Amyrotos and Artem Osmolovskiy  won second place</b> in the Cyprus Digital Champion 2020 competition.
+				Christos Amyrotos (currently MPhil towards PhD at UCLan Cyprus and employed at <a href="http://inspirecenter.org" target="_blank">InSPIRE</a>) and
+				Artem Osmolovskiy (currently working towards an MSc in Data Analytics at UCLan Cyprus, and employed at <a href="http://inspirecenter.org" target="_blank">InSPIRE</a>)
+				developed a <i>Building Management Software</i> (BoMoCo).
+				[<a href="https://www.facebook.com/digitalchampionshipcy" target="_blank">link</a>]</li><br/>
+
+			<li><i>October 7th, 2019</i><br/>
+				<i>BSc Computing</i> students <b>Floris Alexandrou and Marios Miltiadous completed paid summer internships</b> in Croatia.
+				Floris developed neural network-based algorithms for controlling drones/submarines at the University of Split and
+				Marios worked on an efficient methodology for finite element method based structural analysis of marine structures at the University of Zagreb, both via the IAESTE programme.
+				[<a href="https://iaeste.org" target="_blank">link</a>]</li><br/>
+
+			<li><i>December 11th, 2018</i><br/>
+				<i>PhD</i> student <b>Nicos Kasenides received award for his thesis work</b> by the Cyprus Youth Organization.
+				[<a href="https://onek.org.cy/" target="_blank">link</a>]</li><br/>
+
+			<li><i>July 2nd, 2018</i><br/>
+				<b>Irene Polycarpou</b>, Professor in Technology and Innovation in Education (Chair) and <b>Panayiotis Andreou</b>, Assistant Professor in Computing (Programme chair)
+				<b>host prestigeous ACM conference</b> on <i>Innovation and Technology in Computer Science Education (ITiCSE)</i> at UCLan Cyprus.
+			[<a href="https://iticse.acm.org/" target="_blank">link</a>]</li><br/>
+
+			<li><i>June 20th, 2018</i><br/>
+				<b>George Nicou</b>, BSc(Hons) Computing class of 2017 and presently MSc Data Analytics student <b>received two awards in the Cyprus Digital Championship 2018</b> competition:
+				3rd place in the Student Category for his thesis project CodeAdventure, and 2nd place in the Start-up Category for his participation in the start-up Brain Games as the lead developer.
+			[<a href="http://www.sigmalive.com/news/oikonomia/market-news/515547/teleti-aponomis-ton-vraveion-psifiakou-protathlimatos" target="_blank">link</a>]</li><br/>
+
+			<li><i>March 26th, 2018</i><br/>
+			ACM-W Chair and Assistant Professor in Computing, School of Sciences <b>Dr Josephina Antoniou</b> features once again on the Association for Computing Machinery.
+			[<a href="https://www.uclancyprus.ac.cy/acm-w-chair-and-assistant-professor-in-computing-school-of-sciences-dr-josephina-antoniou-features-once-again-on-the-association-for-computing-machinery" target="_blank">link</a>]</li><br/>
+
+			<li><i>February 26th, 2018</i><br/>
+			A delegation by the <i>British Computer Society</i> (BCS) visited our UCLan Cyprus campus and accredited our <i>BSc(Hons) Computing</i> programme, making our graduates eligible for the title of <b>Chartered IT Professional (CITP)</b> .
+			[<a href="https://www.uclancyprus.ac.cy/uclan-cyprus-bsc-computing-accreditation-by-british-computing-society/" target="_blank">link</a>]</li><br/>
+
+			<li><i>February 12th, 2018</i><br/>
+			<i>BSc(Hons) Computing</i> student <b>Christos Amyrotos secured a highly competitive internship under the 2018 IAESTE placement programme</b> at SIM in Belgium.
+			[<a href="http://www.uclancyprus.ac.cy/" target="_blank">link</a>]</li><br/>
+
+			<li><i>January 18th, 2018</i><br/>
+			Course leader of the <i>MSc Cybersecurity</i> programme, <b>Dr Eliana Stavrou was appointed as the new expert Advisory Panel Member</b> by Oxford University.
+			[<a href="https://www.uclancyprus.ac.cy/oxford-university-appointed-uclan-cyprus-msc-cybersecurity-course-leader-dr-stavrou-as-the-new-expert-advisory-panel-member" target="_blank">link</a>]</li><br/>
+
+			<li><i>January 17th, 2018</i><br/>
+			<i>MSc Computing</i> graduate <b>Alberto Bullo was interviewed by Linux.com</b> of the Linux Foundation.
+			[<a href="https://www.linux.com/learn/certification/2018/1/linux-foundation-lfcs-and-lfce-alberto-bullo" target="_blank">link</a>]</li><br/>
+
+			<li><i>January 12th, 2018</i><br/>
+			Senior <i>BSc(Hons) Computing</i> students <b>Nicos Kasenides and Christos Argyrides received awards for their thesis work</b> by the Cyprus Youth Organization.
+			[<a href="https://www.uclancyprus.ac.cy/uclan-cyprus-students-received-awards-by-the-cyprus-youth-organization" target="_blank">link</a>]</li><br/>
+
+			<li><i>November 21st, 2017</i><br/>
+			Assistant Professor <b>Dr Josephina Antoniou was featured in the 'People of ACM European Chapters'</b>.
+			[<a href="https://www.acm.org/articles/people-of-acm-europe/2017/josephina-antoniou" target="_blank">link</a>]</li><br/>
+
+			<li><i>June 25th, 2017</i><br/>
+			<i>MSc Computing</i> students <b>Maria Marnerou, Pantelitsa Marnerou and Alexia Hadjiouraniou won the <i>Maze Solving</i> challenge</b> at the 1st Cyprus Robotex competition.
+			[<a href="https://2017.robotex.org.cy" target="_blank">link</a>]</li><br/>
+
+			<li><i>April 28th, 2017</i><br/>
+			<i>BSc(Hons) Computing</i> student <b>Ernesta Grigaytite was selected by GEANT to represent Cyprus networking students in the TNC17 conference</b>, with a fully funded trip to Austria.
+			[<a href="https://tnc17.geant.org/core/user/1480" target="_blank">link</a>]</li><br/>
+
+		</ul>
+    </div>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">TESTIMONIALS</span>
+  </div>
+</div>
+
+<!-- Container (Testimonials) -->
+<div class="w3-content w3-container w3-padding-64" id="testimonials">
+  <h3 class="w3-center">TESTIMONIALS FROM OUR GRADUATES</h3>
+  <br/>
+
+  <div class="w3-row-padding">
+
+    <div class="w3-col m3">
+      <img src="images/salah.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Salah - works at Nielsen, Amsterdam"/>
+	  <p align="center"><b>Salah</b></p>
+	  <p>Studied BSc(Hons) Computing<br/>Works at <b>Nielsen, Rotterdam</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>I believe the programme gives you the right tools to continue growing by yourself once the degree finishes by teaching you how to learn new materials.
+		The academics interest and support is phenomenal and it goes beyond the lectures scope and will get you motivated to do many more things in the field.</i>
+	  </span>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/dimitri.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Dimitri - works at Microsoft, Copenhagen"/>
+	  <p align="center"><b>Dimitri</b> <a href="pdf/IAESTE_Newsletter_NOV_2016_FINAL-1.pdf" target="_blank"><i class="fa fa-file-pdf"></i></a> <a href="pdf/IAESTE_Newsletter_NOV_2016_FINAL-1.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a> </p>
+	  <p>Studied BSc(Hons) Computing<br/>Works at <b>Microsoft, Copenhagen</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>At UClan CY Computing I gained all the necessary knowledge to get me started on my path as a software engineer.
+		It was not always about learning, as I was able to experience all the other fun aspects of software engineering, such as teamwork and critical problem solving.
+		This healthy environment has allowed me to progress fast, and the experiences I gained while at UClan CY are very helpful even today.</i>
+	  </span>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/elena.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Elena - studies MSc Cybersecurity at UCLan Cyprus"/>
+	  <p align="center"><b>Elena</b></p>
+	  <p>Studied BSc(Hons) Computing,  <b>MSc Cybersecurity</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>I selected to study BSc Computing because nowadays it is needed in every type of industry.
+		Furthermore, studying computing has helped me build logic and problem solving skills.
+		I unreservedly recommend UCLan Cyprus to everyone interested to study computing.</i>
+	  </span>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/alberto.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Alberto - works at Amazon, Prague"/>
+		<p align="center"><b>Alberto</b> <a href="https://www.youtube.com/watch?v=zs79kHWEUQA" target="_blank"><i class="fa fa-video"></i></a> <a href="https://www.youtube.com/watch?v=zs79kHWEUQA" target="_blank"><i class="fas fa-external-link-alt"></i></a> </p>
+	  <p>Studied MSc Computing<br/>Worked at <b>Amazon, Prague</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>I chose to study MSc Computing for its challenging and dynamic study environment.
+<!--		The program provides various courses from many subjects giving you the opportunity to specialize in your preferred area of study. -->
+		Laboratories are well structured with extensive hands-on experience to prepare students for the real working world.
+		Lecturers are exceptional with valuable insights and industry experience into many fields.
+		I would highly recommend this course to anyone who aspires to pursue a career in a technical field or have an interest in the cutting-edge technologies of tomorrow
+		</i>"
+	  </span>
+    </div>
+
+  </div>
+
+  <div class="w3-row-padding">
+
+    <div class="w3-col m3">
+      <img src="images/nicos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Nicos - Received thesis award from CYO"/>
+	  <p align="center"><b>Nicos</b></p>
+	  <p>Studied BSc(Hons) Computing<br/>PhD Candidate at UCLan, Received thesis award from <b>CYO</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>The BSc Computing course at UCLan offers a wide range of practical and theoretical modules that are both fun and challenging to attend. All of the academic staff are extremely supportive and a large number of opportunities, both in Cyprus and abroad, lies ahead for anyone who completes this course. If you enjoy being creative and working with others the course will be as entertaining as it is educational.
+		</i>
+	  </span>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/ernesta.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Ernesta - Cyprus student rep at GEANT"/>
+	  <p align="center"><b>Ernesta</b></p>
+	  <p>Studied BSc(Hons) Computing<br/>Cyprus student rep at <b>GEANT</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>I chose to study BSc Computing, something I feel very passionate about.
+		I am extremely happy with my choice to pursue the degree at UCLan Cyprus. This university is one of a kind in my eyes.
+		Full of wonderful lecturers that really care and try to help the students with finding great opportunities and possibilities to grow their knowledge not only through the modules.
+		I was given an opportunity to compete in the selection for the TNC17 lightning talks. It was one of the best experiences I have had and that is only one example.
+<!--		The best point of this university is that unlike most they try to prepare for what comes after we finish. So if anyone wants to get into computing, this is the perfect place.
+-->
+		</i>
+	  </span>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="images/camyrotos.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Christos - works at i-Spiral, Larnaca"/>
+	  <p align="center"><b>Christos</b></p>
+	  <p>Studied BSc(Hons) Computing<br/>PhD Student at UCLan, Researcher at <b>InSPIRE</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>
+		I am grateful about the Databases module. [It] was structured in a way that it gave me the skills needed to cope in an enterprise environment [one] that makes heavy use of database technologies.
+		</i>
+	  </span>
+    </div>
+
+<!--
+    <div class="w3-col m3">
+      <img src="images/gadamou.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from George - works at Prevention at Sea, Larnaca"/>
+	  <p align="center"><b>George</b></p>
+	  <p>Studied BSc(Hons) Computing & MSc Computing<br/>Works at <b>Prevention at Sea, Larnaca</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>TBD</i>
+	  </span>
+    </div>
+-->
+
+    <div class="w3-col m3">
+      <img src="images/maria.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Maria - works at HS Data Ltd, Nicosia"/>
+	  <p align="center"><b>Maria</b></p>
+	  <p>Studied MSc(Hons) Computing<br/>Works at <b>HS Data Ltd, Nicosia</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>My student life began with a BSc in physics but then I decided to shift to computing, as programming had gained my interest.<br/>
+		Studying MSc Computing at UCLan Cyprus has allowed me to do this switch and helped me get a programming job as a Junior Software Developer.</i>
+	  </span>
+    </div>
+
+  </div>
+
+	<!--
+  <div class="w3-row-padding">
+
+    <div class="w3-col m3">
+      <img src="images/sadamou.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Testimonial from Savvas - works at i-Spiral, Larnaca"/>
+	  <p align="center"><b>Savvas</b></p>
+	  <p>Studied BSc(Hons) Computing<br/>Works at <b>i-Spiral, Larnaca</b></p>
+	  <span class="tooltiptext">
+		<i class="fa fa-quote-left fa-3x fa-pull-left fa-border" aria-hidden="true"></i>
+		<i>I found BSc (Hons) Computing to be an excellent program that exceeded my expectations. I was educated in topics of Software Engineering that are relevant and in high demand in the industry today. 
+		The faculty is extremely knowledgeable and genuinely interested for the development of its students as future IT specialists. I am graduating UCLan Cyprus having received the right education in my field and feeling very confident to compete in the professional sector.
+		</i>
+	  </span>
+    </div>
+
+  </div>
+  -->
+
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-content"><em><a href="http://www.uclancyprus.ac.cy" target="_blank">UCLan Cyprus</a> is a Cyprus-licensed university and closely affiliated with the <a href="http://www.uclan.ac.uk" target="_blank">University of Central Lancashire</a> in the United Kingdom.</em></p>
+  <p class="w3-content">The <em>award-winning campus</em><sup>13</sup> of UCLan Cyprus is located in Pyla, Larnaca, approximately 500 meters from the Larnaca-Ayia Napa highway, near exits 59 and 60.
+  <p class="w3-content"><em>Driving time</em> is 20 min for Larnaca International airport (LCA) or downtown Larnaca, 30 minutes for the beautiful beaches of Ayia Napa, and 40 minutes for the capital city, Nicosia.
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;">
+		<iframe width='100%' height='350' id='mapcanvas' src='https://maps.google.com/maps?q=uclan%20cyprus&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed' frameborder='0' scrolling='no' marginheight='0' marginwidth='0'>
+		</iframe>
+	  </div>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Address: <a href="https://www.google.com/maps/place/UCLan+Cyprus" target="_blank">12 - 14 University Avenue, Pyla, 7080 Larnaka, Cyprus</a><br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: <a href="tel:+35724694000" target="_blank">+357 24 69 4000<a/><br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: <a href="mailto:admissions@uclancyprus.ac.cy" target="_blank">admissions@uclancyprus.ac.cy</a><br>
+      </div>
+	  <p>
+		Would you like to learn more about Computing at UCLan Cyprus?
+		<br/>
+		Stop by for a cup of <i class="fa fa-coffee"></i>, or send us an <a href="mailto:admissions@uclancyprus?subject=Info about Computing programmes">email</a> to arrange an appointment.
+	  </p>
+    </div>
+  </div>
+	<ol start="13">
+		<li>UCLan Cyprus won the <a href="http://www.uclancyprus.ac.cy/en/news/latest-news/uclan-cyprus-wins-inavation-award/" target="_blank">Most InAVative Education Facility</a> award at the prestigious Europe, Middle East and Africa (EMEA) InAVation Awards. </li>
+	</ol>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/UCLanCyprus/"><i class="fab fa-facebook w3-hover-opacity"></i></a> &nbsp;
+    <a href="https://www.youtube.com/user/UCLanCyprus"><i class="fab fa-youtube w3-hover-opacity"></i></a> &nbsp;
+    <a href="https://www.instagram.com/uclancyprus/"><i class="fab fa-instagram w3-hover-opacity"></i></a> &nbsp;
+    <a href="https://twitter.com/uclancyprus"><i class="fab fa-twitter w3-hover-opacity"></i></a> &nbsp;
+    <a href="https://www.linkedin.com/company/uclan-cyprus"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function getSource()
+{
+  var url = new URL(window.location.href);
+  document.getElementById("hidden-source-id").value = url.searchParams.get("source");
+}
+
+function myMap()
+{
+  myCenter=new google.maps.LatLng(35.008387, 33.696834);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+</body>
+</html>

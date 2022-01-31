@@ -1,0 +1,38 @@
+From: Pambos Charalambous <pambos.charalambous@sinopsis.eu>
+Date: 5 January 2022 at 11:26:37 GMT+2
+To: "Panayiotis Andreou <[UCLan Cyprus Ltd] School of Sciences>" <PGAndreou@uclan.ac.uk>
+Cc: Alexandros Christou <AChristou4@uclan.ac.uk>
+Subject: BSc Computing - Alexandros Christou
+
+﻿
+Dear Panayiotis,
+
+ 
+
+Happy new year with my best wishes for health, happiness and lot of happiness for the new year.
+
+ 
+
+With this note I would like to express my appreciation and thank you for the opportunity you gave us to work with Alexandros Christou a 3rd year student at the BSc computing course in uclan Cyprus.
+
+Alexandros has worked intensively under you supervision and with great sense of responsibility on an ETL solution required to interphase with pharmacy POS and get the appropriate db structure for the execution of a BI solution IAS sinopsis is offering to its clients.
+
+The assignment included the connection with drobox where the POS data was locally copied daily, transfer the data on premise and conversion of this POS db, which in most of the cases was in access format, to sql. Specific data manipulation was then performed with the merge of different tables into the required for BI purposes structure and the daily update of the newly created sql tables.
+
+All this complex process and its daily maintenance resulted into a structured db which our BI visualization system access daily to provide continues service to pharmacies.
+
+I was impressed with Alexandros ability to grasp so quickly the requirements and convert a complex issue into a solution which runs seamlessly on a daily basis. I was also impressed how quickly a 3rd year student has gained all required knowledge and ability to convert a business issue into a solution demonstrating both technical capabilities and business sense.
+
+From the different assignments we have take with uclan BSc computing student, building pharmatrack in the past and with the most recent experience on building this ETL solution, I would like to congratulate you on the work achieved in Uclan preparing the next generation of computer scientists who have both the knowledge capacity but also the business sense to overcome any challenge they will be facing in their professional career.
+
+ 
+
+Thanks and looking forward for our next assignment.
+
+ 
+
+Regards
+
+ 
+
+Pambos
